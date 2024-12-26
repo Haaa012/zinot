@@ -1,0 +1,63 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-animation:hover {
+  animation: rotate 1s infinite linear;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-color: red; /* Couleur de départ */
+  }
+  50% {
+    background-color: green; /* Couleur intermédiaire */
+  }
+  100% {
+    background-color: white; /* Retour à la couleur de départ */
+  }
+}
+
+.animated-background {
+  animation: backgroundAnimation 1s ease-in-out infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, blue, green);
+  background-size: 100%;
+  background-position: 100% 0;
+  transition: background-position 0.5s;
+}
+
+.animated-background:hover {
+  background-position: 0 0;
+}
+
+@keyframes float-up {
+  0% {
+    transform: translateY(300px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-800px);
+    opacity: 0;
+  }
+}
+
+.animate-float {
+  animation: float-up infinite ease-in-out;
+}
+.bg-rainbow {
+  background: radial-gradient(circle,   var(--text-color) );
+}
+
+/* styles.css */
+
+/* Styles pour réduire la taille des flèches */

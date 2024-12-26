@@ -1,0 +1,31 @@
+.loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Prend toute la hauteur de l'écran */
+  }
+  
+  .loader-circle {
+    border: 8px solid rgba(255, 255, 255, 0.3); /* Couleur de fond */
+    border-top: 8px solid #3498db; /* Couleur de l'arc supérieur */
+    border-radius: 50%; /* Rendre le div rond */
+    width: 60px; /* Taille du cercle */
+    height: 60px; /* Taille du cercle */
+    animation: spin 1s linear infinite; /* Animation de rotation */
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg); /* Début de la rotation */
+    }
+    100% {
+      transform: rotate(360deg); /* Fin de la rotation */
+    }
+  }
+  
+  .loader p {
+    margin-top: 10px; /* Espacement entre le cercle et le texte */
+    color: #fff; /* Couleur du texte */
+  }
+  

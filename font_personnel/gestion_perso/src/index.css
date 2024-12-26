@@ -1,0 +1,34 @@
+:root {
+    --primary-color: #3498db;
+    --success-color: #2ecc71;
+    --text-color: #2c3e50;
+    --violet-color :#bc69db ;
+    --black-color : #0c0c0c;
+    --red-color :#ff0000 ;
+
+  }
+  
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Agrandir les dots de pagination */
+.slick-dots li button {
+  width: 20px; /* Largeur des bullets */
+  height: 20px; /* Hauteur des bullets */
+  background-color: #007bff; /* Couleur des bullets */
+  border-radius: 50%; /* Rendre les bullets circulaires */
+  opacity: 1; /* S'assurer que les bullets sont opaques */
+}
+
+/* Agrandir le dot actif */
+.slick-dots li.slick-active button {
+  background-color: #ff6347; /* Couleur du bullet actif */
+  transform: scale(1.5); /* Agrandir le bullet actif */
+}
+
+/* Ajouter un effet au survol des dots */
+.slick-dots li button:hover {
+  background-color: red; /* Changer la couleur au survol */
+  transform: scale(1.2); /* Agrandir légèrement au survol */
+}
